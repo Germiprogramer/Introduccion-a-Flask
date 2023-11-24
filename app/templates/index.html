@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
-<body>    
-    <h1>Index</h1>
-    <p>Esto es el index</p>
-    <h1>{{data}}</h1>
-</body>
-</html>
+{% extends './layout.html' %}
+{% block title %}
+{{ data.titulo}}
+{% endblock %}
+{% block content %}
+    <h1>{{ data.nombre }}</h1>
+{% endblock %}
+```
